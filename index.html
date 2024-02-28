@@ -87,6 +87,83 @@
               </div> 
             </div>
           </div>
+          <div class="portrait-bottom__line"></div>
+        </section>
+        <section class="content-information__container">
+          <div class="content-information">
+            <article>
+            <h2 id="about">About me:</h2>
+            <p>My hobby is sports. I like the gym. It helps me to relax after work. My strong points (strengths) are : I'm detail-oriented, I have good analytical skills, I'm a fast learner, I'm responsible.I have solid knowledge in computer operation. My weak points are: sometimes I lack confidence; I focus too much on the details, I' m a perfectionist.</p>
+            <div class="content-information-bottom-line"></div>
+            </article>
+            <article>
+              <h2 id="priorities">My priorities:</h2>
+              <p>Get theoretical knowledge and consolidate it in practice, constantly upgrade Soft and Hard skills.</p>
+              <div class="content-information-bottom-line"></div>
+            </article>
+            <article>
+              <h2 id="goals">My goals:</h2>
+              <p>Develop in the IT field in the areas of QA-Manual (hereinafter QA-Automation) and Frontend Dev.</p>
+              <div class="content-information-bottom-line"></div>
+            </article>
+            <article>
+              <h2 id="qualities">Personal qualities:</h2>
+              <ul>
+                <li>readiness for constant self-development</li>
+                <li>sociability</li>
+                <li>ability to learn quickly</li>
+                <li>attentiveness</li>
+                <li>purposefulness</li>
+                <li>independence</li>
+                <li>logical thinking</li>
+              </ul>
+              <div class="content-information-bottom-line"></div>
+            </article>
+            <article>
+              <h2 id="codeExample">Code example:</h2>
+              <code>
+                <pre>
+                  async function getQuotes() {
+                    let quotes='';
+
+                    if(localStorage.getItem('lanDate') === 'ru'){
+                        quotes = './js/data.json';
+                    }
+                    if(localStorage.getItem('lanDate') === 'en'){
+                        quotes = './js/data-en.json';
+                    }
+                    const res = await fetch(quotes);
+                    const data = await res.json(); 
+                    quote.textContent = `"` + data[randNum].text + `"`;
+                    author.textContent = data[randNum].author;
+                  }
+                </pre>
+              </code>
+              <div class="content-information-bottom-line"></div>
+            </article>
+            <article>
+              <h2 id="education">Education/Courses:</h2>
+              <ul>
+                <li>November 01, 2023 completed the “JS/FE PRE-SCHOOL 2023Q2 (JAVASCRIPT)” RS School course (<a href="https://app.rs.school/certificate/o7q0rj39">my certificate</a>)</li>
+                <li>March 04, 2023 completed the “JS/FE Pre-School 2022Q4” RS School course (<a href="https://app.rs.school/certificate/hcrttvje">my certificate</a>)</li>
+                <li>December, 2022 completed the: “JavaScript: Perfect for Beginners”, “HTML: Perfect for Beginners”, “CSS: Free Online Learning for Beginners” (from https://code-basics.com)</li>
+                <li>Self-education through YouTube video tutorials</li>
+                <li>August 10, 2022 went to the course “QA Start” at https://edu.academiait.ru</li>
+                <li>08/26/2022, participated in the webinar “Beginner’s Guide to Careers in Tech”, EPAM</li>
+                <li>11/24/2022 successfully completed the course “Software Testing Introduction(RUS)”, Svyatoslav Kulikov(EPAM)</li>
+                <li>2021, passed simulators “Fundamentals of HTML, JS, CSS.”, htmlacademy.ru</li>
+                <li>11/26/2021 completed the “Fundamentals of Software Testing” course at https://practicum.yandex.ru/.</li>
+                <li>2007-2012 “Polotsk State University”, majoring in “Modeling and computer design of radio-electronic means”, qualification: engineer in radio electronics.</li>
+                <li>2003-2007 “Novopolotsk State Polytechnic College”, specializing in “Automation of technological processes and production”, qualified: electrical engineer, profession: instrumentation and automation fitter.</li>
+                <li>2002-2002 “Institute for advanced training and retraining of managers and specialists of the educational institution Polotsk State University”, specialty: “PC operator-user”.</li>
+              </ul>
+              <div class="content-information-bottom-line"></div>
+            </article>
+            <article>
+              <h2 id="english-level">My level of English:</h2>
+              <p>B2 (as measured by the EPAM Training Center tests)</p>
+            </article>
+          </div>
         </section>
       </div>
     </main>
