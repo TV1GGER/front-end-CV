@@ -353,6 +353,82 @@ h3 {
   background: linear-gradient(to left, #ffffff, gray, #ffffff);
 }
 
+.contacts {
+  position: sticky;
+  top: 5vw;
+  max-width: 25vw;
+  max-height: 25vw;
+  background-color: black;
+  margin-top: 12vw;
+  margin-left: 2vw;
+  border: 0.25vw solid;
+  border-color: chartreuse;
+  border-radius: 0.5vw;
+  transition: 0.4s;
+  text-align: center;
+  font-family: "Rubik";
+  letter-spacing: 0.06vw;
+  font-size: 1.7vw;
+  font-weight: 600;
+  padding-top: 1.4vw;
+  padding-bottom: 1.4vw;
+  padding-right: 1.4vw;
+  padding-left: 1.4vw;
+  z-index: 90;
+}
+
+.contacts-header {
+  color: white;
+  padding-bottom: 1.4vw;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  gap: 0.5vw;
+  text-align: left;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.contacts-list li {
+  min-height: 2.2vw;
+}
+
+.contacts-list svg {
+  width: 2.2vw;
+  height: 2.2vw;
+}
+
+.contacts-list a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.1vw;
+  transition: 0.4s;
+}
+
+.contacts-list a:hover {
+  color: #7FFF00;
+}
+
+.contacts-list a:hover svg {
+  stroke: #7FFF00;
+  transform: rotate(15deg);
+  transition: 0.4s;
+}
+
+.phone-link, .e-mail-link, .telegram-link, .git-hub-link, .linked-in-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6vw;
+  letter-spacing: 0.06vw;
+}
+
 .content-information__container {
   display: flex;
   flex-direction: row;
